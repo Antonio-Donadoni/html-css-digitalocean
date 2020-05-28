@@ -17,7 +17,13 @@ h1 {
   font-weight: bolder;
 }
 h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #041C4F;
+}
+
+p{
+  font-size: 1rem;
 }
 /* DEBUG:  */
 
@@ -129,6 +135,39 @@ h2 {
 #tools img {
   max-width: 100%;
 }
+/* SERVICES */
+
+#services .row:first-of-type {
+  text-align: center;
+}
+#services ul {
+  margin-top: 20px;
+  list-style-type: none;
+  border-left: 2px solid #E5E8ED;
+
+}
+#services li {
+  padding :10px 5px ;
+  text-decoration: none;
+  font-weight: bold;
+
+}
+#services .card{
+  padding: 20px;
+}
+#services li a {
+  color: #77839F;
+}
+#services h5 {
+  color: #041C4F;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+#services p {
+  color: #5b6987;
+  font-size: 1rem;
+
+}
 
 #regions{
   background-color: #0063ff;
@@ -164,7 +203,7 @@ h2 {
 @media screen and (max-width:1200px) {
 
 #hash{
-  margin-top: 5px; 
+  margin-top: 5px;
 }
 
 }
