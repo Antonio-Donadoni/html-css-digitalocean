@@ -1,4 +1,4 @@
-
+/* *************************** CSS GENERALE *************************** */
 *{
   margin: 0;
   padding: 0;
@@ -7,26 +7,138 @@
 
 html {
   font-size: 18px;
+
 }
-
-
+body {
+  font-family: 'Nunito Sans', sans-serif;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+h2 {
+  font-size: 1.5rem;
+}
 /* DEBUG:  */
 
 .container {
 
-  background-color: lime;
+  /* background-color: lime; */
 
 }
 
-section {
+/* section {
   background-color: blue;
-}
+} */
 .row {
   border: 1px solid black;
-  height: 200px;
+  /* height: 200px; */
 }
 
 [class^=col-] {
   border: red 1px solid;
-  height: 100%
+  /* height: 100% */
+}
+
+/* *************************** CSS HEADER *************************** */
+#navbar{
+  height: 100px;
+}
+#jumbo {
+  background-color: #0063ff;
+  background-image: url("../img/jumbo.svg");
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  color: #fff;
+}
+#jumbo .container {
+  height: inherit;
+}
+#jumbo .row {
+  height: inherit;
+
+}
+#jumbo .col-md-6 {
+  position: relative;
+  height: 100%;
+}
+.title-wrapper {
+  position: absolute;
+  top: 50%;
+  left:0;
+  transform: translateY(-50%);
+}
+.title-wrapper p {
+  font-size: 1.3rem;
+  font-weight: lighter;
+}
+.jumbo-form {
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  background-color: #fff;
+  padding: 20px;
+  color: #031c4e;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+.jumbo-form h2:last-of-type{
+  color:#0063ff;
+}
+.jumbo-form button {
+  width: 100%;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.jumbo-form button:first-of-type {
+  background-color: #579AFF;
+  color: white;
+}
+.jumbo-form button:last-of-type {
+  position: relative;
+  box-shadow: 1px 1px 2px grey;
+}
+.jumbo-form button:last-of-type img{
+  position: absolute;
+  left: 5%;
+  height: 20px;
+
+}
+/* *************************** CSS MAIN *************************** */
+#tools, .carous {
+  background-color: #f3f5f8;
+}
+#regions{
+  background-color: #0063ff;
+    background-image: url("../img/data-center-map.svg");
+}
+/* *************************** CSS FOOTER *************************** */
+#get-started {
+  background-color: #0063ff;
+  background-image: url("../img/bg-home-cta.svg");
+}
+#links-section {
+  background-color: #010e28;
+}
+
+
+/* *********************CSS MEDIA QUERY********************************* */
+
+@media screen and (max-width:992px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+  #jumbo .col-md-6 {
+    height: 50%;
+
+  }
+
 }
