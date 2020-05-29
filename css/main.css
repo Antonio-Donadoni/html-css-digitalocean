@@ -11,6 +11,10 @@ html {
 }
 body {
   font-family: 'Nunito Sans', sans-serif;
+  padding-top: 54px;
+}
+section{
+  padding: 50px 0;
 }
 h1 {
   font-size: 3rem;
@@ -47,10 +51,31 @@ p{
 }
 
 /* *************************** CSS HEADER *************************** */
-#navbar{
-  height: 100px;
+
+.navbar-brand img {
+  height: 35px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+
+}
+.navbar-default {
+  background-color: #fff;
+  border: none;
+  margin-bottom: 0;
+  padding: 5px 0;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #031c4e;
+    font-weight: bold;
 }
 
+#sign-up {
+  border: solid 2px #0063ff;
+  border-radius: 5px;
+}
+#sign-up a {
+  color: #0063ff;
+}
 /* JUMBO */
 
 #jumbo {
@@ -171,12 +196,15 @@ p{
 
 /* CAROUSEL */
 .carous {
-  padding-bottom: 20px;
   text-align: center;
 }
 .carous img {
   width: 100%;
   vertical-align: middle;
+}
+.carous .col-md-6 i {
+  padding: 10px 3px;
+  color: #0063ff;
 }
 
 .left-wrapper, .right-wrapper {
@@ -198,7 +226,7 @@ p{
     background-image: url("../img/data-center-map.svg");
     background-position: center;
     background-size: cover;
-    padding: 50px 0;
+
 
 }
 #regions table {
@@ -226,18 +254,65 @@ p{
 #regions table a {
   color: #00d7d2;
 }
-#regions h2 {
+#regions h2, #get-started h2 {
   color: #fff;
 }
 /* *************************** CSS FOOTER *************************** */
 #get-started {
   background-color: #0063ff;
   background-image: url("../img/bg-home-cta.svg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+#get-started h2 {
+  padding-bottom: 20px;
+}
+#get-started a {
+  background-color: #fff;
+  color: #0063ff;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+
 }
 #links-section {
   background-color: #010e28;
+  padding-top: 20px;
+  color: #7A859D;
+}
+#links-section img {
+  display: block;
+  padding-bottom: 10px;
+}
+#links-section span {
+  display: block;
+}
+#links-section h6 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+}
+#links-section ul {
+list-style-type: none;
+}
+#links-section li {
+  padding-top: 10px;
+}
+#links-section a {
+  color: #7A859D;
+  font-weight: bold;
 }
 
+#social-list  li {
+  display: inline-block;
+  padding: 10px 10px 10px 0;
+  font-size: 1.2rem;
+}
+#social-list  a {
+  color: #7A859D;
+}
 
 /* *********************CSS MEDIA QUERY********************************* */
 @media screen and (max-width:1200px) {
@@ -252,7 +327,7 @@ p{
 
 
 }
-@media screen and (max-width:992px) {
+@media screen and (max-width:991px) {
   h1 {
     font-size: 1.8rem;
   }
@@ -267,5 +342,39 @@ p{
   .left-wrapper, .right-wrapper {
     display: none;
   }
+  .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+}
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+  margin-top: 7.5px;
+}
+.navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+    display:block !important;
+}
 
 }
