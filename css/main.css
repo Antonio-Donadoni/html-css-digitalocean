@@ -29,32 +29,13 @@ h2 {
 p{
   font-size: 1rem;
 }
-/* DEBUG:  */
-
-.container {
-
-  /* background-color: lime; */
-
-}
-
-/* section {
-  background-color: blue;
-} */
-.row {
-  /* border: 1px solid black; */
-  /* height: 200px; */
-}
-
-[class^=col-] {
-  /* border: red 1px solid; */
-  /* height: 100% */
-}
 
 /* *************************** CSS HEADER *************************** */
-
+.navbar-brand {
+  padding: 8px 0;
+}
 .navbar-brand img {
-  height: 35px;
-  padding-bottom: 10px;
+  width: 200px;
   padding-right: 20px;
 
 }
@@ -68,13 +49,23 @@ p{
     color: #031c4e;
     font-weight: bold;
 }
+.navbar-default .navbar-nav > li > a:hover {
+  color: #0063ff;
+}
 
 #sign-up {
   border: solid 2px #0063ff;
   border-radius: 5px;
+  transition: all 0.3s;
 }
 #sign-up a {
   color: #0063ff;
+}
+#sign-up:hover {
+  background-color: #0063ff;
+}
+#sign-up:hover a {
+  color: #fff;
 }
 /* JUMBO */
 
@@ -108,7 +99,7 @@ p{
   font-weight: lighter;
 }
 .jumbo-form {
-  width: 60%;
+  width: 70%;
   position: absolute;
   top: 50%;
   left:50%;
@@ -131,6 +122,11 @@ p{
 .jumbo-form button:first-of-type {
   background-color: #579AFF;
   color: white;
+  transition: all 0.3s;
+}
+.jumbo-form button:first-of-type:hover {
+  background-color: #0063ff;
+
 }
 .jumbo-form button:last-of-type {
   position: relative;
@@ -151,7 +147,11 @@ p{
 
 #tools{
   text-align: center;
+}
+#tools h3 {
   text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 1rem;
 }
 
 #tools .row {
@@ -159,6 +159,15 @@ p{
 }
 #tools img {
   max-width: 100%;
+}
+
+#tools a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #0069ff;
+}
+#tools a:hover {
+  color: #1633ff;
 }
 /* SERVICES */
 
@@ -193,7 +202,14 @@ p{
   font-size: 1rem;
 
 }
-
+#features a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #0069ff;
+}
+#features a:hover {
+  color: #1633ff;
+}
 /* CAROUSEL */
 .carous {
   text-align: center;
@@ -254,6 +270,10 @@ p{
 #regions table a {
   color: #00d7d2;
 }
+#regions table a:hover {
+  color: #0063ff;
+  text-decoration: none;
+}
 #regions h2, #get-started h2 {
   color: #fff;
 }
@@ -275,7 +295,11 @@ p{
   border-radius: 5px;
   font-size: 1rem;
   font-weight: bold;
-
+  transition: all 0.3s;
+}
+#get-started a:hover {
+  background-color: #aaa;
+  text-decoration: none;
 }
 #links-section {
   background-color: #010e28;
@@ -303,6 +327,10 @@ list-style-type: none;
 #links-section a {
   color: #7A859D;
   font-weight: bold;
+}
+#links-section a:hover {
+  color: #fff;
+  text-decoration: none;
 }
 
 #social-list  li {
@@ -336,8 +364,12 @@ list-style-type: none;
     font-size: 1.2rem;
   }
   #jumbo .col-md-6 {
-    height: 50%;
+    height: 45%;
+    margin: 0 10px;
 
+  }
+  #jumbo p {
+    font-size: 1.1rem;
   }
   .left-wrapper, .right-wrapper {
     display: none;
