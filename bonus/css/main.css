@@ -1,0 +1,540 @@
+/* *************************** CSS GENERALE *************************** */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  padding-top: 54px;
+}
+
+section{
+  padding: 50px 0;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #041C4F;
+}
+
+p {
+  font-size: 1rem;
+}
+
+/* *************************** CSS HEADER *************************** */
+/* NAVBAR */
+
+.navbar-brand {
+  padding: 8px 0;
+}
+
+.navbar-brand img {
+  width: 200px;
+  padding-right: 20px;
+}
+
+.navbar-default {
+  background-color: #fff;
+  border: none;
+  margin-bottom: 0;
+  padding: 5px 0;
+  box-shadow: rgba(3,27,78,0.1) 0px 2px 4px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #031c4e;
+    font-weight: bold;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #0063ff;
+}
+
+#sign-up {
+  border: solid 2px #0063ff;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+#sign-up a {
+  color: #0063ff;
+}
+
+#sign-up:hover {
+  background-color: #0063ff;
+}
+
+#sign-up:hover a {
+  color: #fff;
+}
+
+/* JUMBO */
+
+#jumbo {
+  background-image: url("../img/jumbo.svg");
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  color: #fff;
+}
+
+#jumbo .container {
+  height: inherit;
+}
+
+#jumbo .row {
+  height: inherit;
+}
+
+#jumbo .col-md-6 {
+  position: relative;
+  height: 100%;
+}
+
+.title-wrapper {
+  position: absolute;
+  top: 50%;
+  left:0;
+  transform: translateY(-50%);
+}
+
+.title-wrapper p {
+  font-size: 1.3rem;
+  font-weight: lighter;
+}
+
+.jumbo-form {
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  background-color: #fff;
+  padding: 20px;
+  color: #031c4e;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+
+.jumbo-form h2 {
+  font-size: 1.5rem;
+}
+
+.jumbo-form h2:last-of-type{
+  color:#0063ff;
+}
+
+.jumbo-form button {
+  width: 100%;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.jumbo-form button:first-of-type {
+  background-color: #579AFF;
+  color: white;
+  transition: all 0.3s;
+}
+
+.jumbo-form button:first-of-type:hover {
+  background-color: #0063ff;
+}
+
+.jumbo-form button:last-of-type {
+  position: relative;
+  box-shadow: 1px 1px 2px grey;
+}
+
+.jumbo-form button:last-of-type img{
+  position: absolute;
+  left: 5%;
+  height: 20px;
+}
+
+/* *************************** CSS MAIN *************************** */
+/* TOOLS */
+
+#tools, .carous-one, .carous-two {
+  background-color: #f3f5f8;
+}
+
+#tools{
+  text-align: center;
+}
+
+#tools h3 {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 1rem;
+}
+
+#tools .row {
+  vertical-align: middle;
+}
+
+#tools img {
+  max-width: 100%;
+}
+
+#tools a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #0069ff;
+}
+
+#tools a:hover {
+  color: #1633ff;
+}
+
+/* SERVICES */
+
+#services .row:first-of-type, #features .row:first-of-type {
+  text-align: center;
+}
+
+#services ul {
+  margin-top: 20px;
+  list-style-type: none;
+  border-left: 2px solid #E5E8ED;
+}
+
+#services li {
+  padding :10px 5px ;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#services .card{
+  padding: 20px;
+}
+
+#services li a {
+  color: #77839F;
+}
+
+#services h5 , #features h5{
+  color: #041C4F;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#services p, #features p {
+  color: #5b6987;
+  font-size: 1rem;
+}
+#features .card {
+  padding: 20px;
+}
+#features a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #0069ff;
+}
+
+#features a:hover {
+  color: #1633ff;
+}
+
+/* CAROUSEL */
+
+.carous-one, .carous-two {
+  text-align: center;
+}
+
+.carous-one .row:first-of-type, .carous-two .row:first-of-type {
+  padding-bottom: 15px;
+}
+
+
+.carous-one .left-wrapper, .carous-one .right-wrapper {
+  height: 360px;
+}
+
+.carous-two .left-wrapper, .carous-two .right-wrapper {
+  height: 300px;
+}
+
+.left-wrapper .glyphicon, .right-wrapper .glyphicon {
+  font-size: 2rem;
+  color: #041C4F;
+}
+.carousel-control.left, .carousel-control.right {
+   background-image:none ;
+   filter:none ;
+}
+
+#myCarousel p {
+  padding: 15px 0;
+}
+
+#myCarousel img {
+  max-height: 360px;
+}
+
+#myCarousel .carousel-indicators {
+  bottom: -25px;
+}
+
+#myCarousel2 .carousel-indicators {
+  bottom: -40px;
+}
+
+ .carousel-indicators .active {
+  background-color: #0063ff;
+  padding: 5px;
+}
+
+ .carousel-indicators li {
+  border: 2px solid #0063ff;
+  margin: 0 2px;
+  padding: 5px;
+}
+
+.carousel-wrapper {
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+	border: 1px solid #f3f5f9;
+	box-shadow: 0px 2px 4px rgba(1,14,40,0.05);
+	border-radius: 6px;
+  color: #5b6987;
+  min-height: 300px;
+}
+
+
+.carousel-wrapper img {
+  max-width: 150px;
+}
+
+.carousel-wrapper p {
+  font-weight: lighter;
+  font-size: 1.4rem;
+  margin: 30px 0;
+}
+.carousel-wrapper span:first-of-type{
+  font-size: 1rem;
+  font-weight: bold;
+  display: block;
+}
+
+/* REGIONS */
+
+#regions{
+    background-image: url("../img/data-center-map.svg");
+    background-color: #010e28;
+    background-position: center;
+    background-size: cover;
+}
+
+#regions table {
+  width: 100%;
+  font-size: 1rem;
+}
+
+#regions table tr {
+  border-bottom: 1px #8E99B0 solid;
+  height: 50px;
+}
+
+#regions table tr td {
+  width: 60%;
+  color: #8E99B0;
+}
+
+#regions table tr td:first-of-type {
+  width: 20%;
+  color: #fff;
+  font-weight: bold;
+}
+
+#regions table tr td:last-of-type {
+  width: 20%;
+  text-align: right;
+}
+
+#regions table a {
+  color: #00d7d2;
+}
+
+#regions table a:hover {
+  color: #0063ff;
+  text-decoration: none;
+}
+
+#regions h2, #get-started h2 {
+  color: #fff;
+}
+
+/* *************************** CSS FOOTER *************************** */
+
+#get-started {
+  background-color: #0063ff;
+  background-image: url("../img/bg-home-cta.svg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+#get-started h2 {
+  padding-bottom: 20px;
+}
+
+#get-started a {
+  background-color: #fff;
+  color: #0063ff;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+#get-started a:hover {
+  background-color: #aaa;
+  text-decoration: none;
+}
+
+#links-section {
+  background-color: #010e28;
+  padding-top: 20px;
+  color: #7A859D;
+}
+
+#links-section img {
+  display: block;
+  padding-bottom: 10px;
+}
+
+#links-section span {
+  display: block;
+}
+
+#links-section h6 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+#links-section ul {
+list-style-type: none;
+}
+
+#links-section li {
+  padding-top: 10px;
+}
+
+#links-section a {
+  color: #7A859D;
+  font-weight: bold;
+}
+
+#links-section a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+#social-list  li {
+  display: inline-block;
+  padding: 10px 10px 10px 0;
+  font-size: 1.2rem;
+}
+
+#social-list  a {
+  color: #7A859D;
+}
+
+/* *********************CSS MEDIA QUERY********************************* */
+
+@media screen and (max-width:1200px) {
+
+  #hash{
+  margin-top: 5px;
+  }
+
+  .left-wrapper, .right-wrapper {
+    height: 295px;
+  }
+}
+
+
+@media screen and (max-width:991px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  #jumbo .col-md-6 {
+    height: 40%;
+    margin: 0 10px;
+  }
+
+  #jumbo p {
+    font-size: 1.1rem;
+  }
+
+  .title-wrapper {
+    top: 25%;
+    text-align: center;
+  }
+
+  .left-wrapper, .right-wrapper {
+    display: none;
+  }
+
+  /* NAVBAR COLLAPSE */
+  .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+  }
+
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+
+  .navbar-nav {
+      float: none!important;
+  margin-top: 7.5px;
+  }
+
+.navbar-nav>li {
+      float: none;
+  }
+
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+
+  .collapse.in{
+    display:block !important;
+  }
+}
